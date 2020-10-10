@@ -17,7 +17,7 @@ def text(input_text):
     return giz_text
 
 
-def link(dest_url: str) -> str:
+def link(dest_url):
     params = {"search": dest_url}
     return "http://www.gizoogle.net/tranzizzle.php?{}".format(parse.urlencode(params))
 
